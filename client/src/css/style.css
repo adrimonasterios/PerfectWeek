@@ -2,7 +2,7 @@
 * {
   /* box-sizing: border-box; */
   font-family: 'Shadows Into Light Two', cursive;
-  color: black;
+  color: rgb(74, 74, 74);
   text-decoration: none;
 }
 
@@ -18,15 +18,6 @@ body {
   overflow: auto;
 }
 
-`/* .imageworld:hover {
-  transition: all 1.25s ease-in-out;
-  -webkit-filter: blur(4px);
-  -moz-filter: blur(4px);
-  -ms-filter: blur(4px);
-  filter: blur(4px);
-} */`
-
-
 li {
   list-style-type: none;
 }
@@ -41,13 +32,16 @@ li {
   margin: 10px;
   padding: 10px;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .Logotopic {
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Trirong', serif;
+  font-size: 60px;
+  font-weight: bold;
   display: center;
-  height: 200px;
+  margin-top: -15px;
+  height: 300px;
   text-align: center;
 }
 
@@ -58,6 +52,24 @@ li {
   text-align: center;
   margin-bottom: 100%;
 }
+
+.pick {
+  margin-top: 3em;
+  font-size: 30px;
+  font-weight: bold;
+  overflow: auto;
+}
+
+#foo {
+    width: 20%;  height: 3em;
+    margin: 50px;
+    padding: 10px;
+    color: rgba(74, 74, 74, 1);
+    font-size: 15px;
+    overflow: auto;
+}
+
+
 
 
 @media only screen and (max-width: 750px) {
