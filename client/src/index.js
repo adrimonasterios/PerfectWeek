@@ -40,11 +40,11 @@ class App extends React.Component{
     return(
       <Router>
         <div>
-          <ul>
-            <li><Link to="/home">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-          </ul>
+            <ul className="navBar">
+              <div className="first"><li><Link to="/home">Home</Link></li></div>
+              <div className="second"><li><Link to="/about">About</Link></li></div>
+              <div className="third"><li><Link to="/contact">Contact</Link></li></div>
+            </ul>
           <Route path="/home" exact component={() => <Home sayHello={this.sayHello} />}/>
           <Route path="/week" exact render={() => <Week queryData={this.state.queryData} queryDataActive={this.state.queryDataActive} queryDataArts={this.state.queryDataArts} queryDataPublicArts={this.state.queryDataPublicArts}/>}/>
        </div>

@@ -3,17 +3,22 @@ import axios from 'axios';
 // import NavBar from "NavBar";
 import HomeForm from "./HomeForm";
 
+
 class Home extends React.Component {
 
   render () {
     return (
-      <div className="homeContainer">
-       <img src="" alt="Logo"/>
-       <div>
-         <p>Where do you want to have your perfect week?</p>
+    <div>
+     <div className="imageworld" >
+      <h1 className="Logotopic">PERFECT WEEK</h1>
+        <div className="homeContainer">
+         <div>
+           <p>Pick the city! We do the rest</p>
+         </div>
+          <HomeForm sayHello={this.props.sayHello}/>
        </div>
-       <HomeForm sayHello={this.props.sayHello}/>
-      </div>
+     </div>
+   </div>
     )
   }
 }

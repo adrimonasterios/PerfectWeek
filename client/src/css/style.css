@@ -1,4 +1,72 @@
-*{
-  box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+/* overall grab */
+* {
+  /* box-sizing: border-box; */
+  font-family: 'Shadows Into Light Two', cursive;
+  color: black;
+  text-decoration: none;
+}
+
+body {
+
+}
+
+.imageworld {
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-width: auto;
+  overflow: auto;
+}
+
+`/* .imageworld:hover {
+  transition: all 1.25s ease-in-out;
+  -webkit-filter: blur(4px);
+  -moz-filter: blur(4px);
+  -ms-filter: blur(4px);
+  filter: blur(4px);
+} */`
+
+
+li {
+  list-style-type: none;
+}
+
+
+.navBar {
+  display: flex;
+  justify-content:flex-end;
+}
+
+.first, .second, .third {
+  margin: 10px;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.Logotopic {
+  font-family: 'Shadows Into Light Two', cursive;
+  display: center;
+  height: 200px;
+  text-align: center;
+}
+
+.homeContainer {
+  border-style: solid;
+  border-color: rgba(239, 248, 250, 0.46);
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  margin-bottom: 100%;
+}
+
+
+@media only screen and (max-width: 750px) {
+    .homeContainer  {
+    color: inherit;
+    overflow: auto;
+  }
+   .imageworld {
+     background-size: 100%;
+     overflow: auto;
+  }
 }
