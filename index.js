@@ -17,9 +17,37 @@ app.use(express.static(__dirname + '/client/build'))
 
 
 app.get('/home', async (req, res) => {
-  console.log(req.params)
-  let {data} = await axios.get(`https://api.yelp.com/v3/businesses/search?location=`);
+  try {
+  let {data} = await axios.get(`https://api.yelp.com/v3/businesses/search?categories=restaurants&location=${req.query.location}`);
   res.json(data);
+} catch(e) {
+  console.log(e)
+}
+})
+
+app.get('/home2', async (req, res) => {
+  try{
+  let {data} = await axios.get(`https://api.yelp.com/v3/businesses/search?categories=active&location=${req.query.location}`);
+  res.json(data);
+} catch(e) {
+    console.log(e)
+  }
+})
+app.get('/home3', async (req, res) => {
+  try{
+  let {data} = await axios.get(`https://api.yelp.com/v3/businesses/search?categories=arts&location=${req.query.location}`);
+  res.json(data);
+}catch(e) {
+  console.log(e);
+}
+})
+app.get('/home4', async (req, res) => {
+  try{
+  let {data} = await axios.get(`https://api.yelp.com/v3/businesses/search?categories=hotelstravel.localflavor.publicart&location=${req.query.location}`);
+  res.json(data);
+}catch(e) {
+  console.log(e)
+}
 })
 
 
