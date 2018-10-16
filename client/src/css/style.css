@@ -1,4 +1,84 @@
-*{
-  box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+/* overall grab */
+* {
+  /* box-sizing: border-box; */
+  font-family: 'Shadows Into Light Two', cursive;
+  color: rgb(74, 74, 74);
+  text-decoration: none;
+}
+
+body {
+
+}
+
+.imageworld {
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-width: auto;
+  overflow: auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+.navBar {
+  display: flex;
+  justify-content:flex-end;
+}
+
+.first, .second, .third {
+  margin: 10px;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.Logotopic {
+  font-family: 'Trirong', serif;
+  font-size: 60px;
+  font-weight: bold;
+  display: center;
+  margin-top: -15px;
+  height: 300px;
+  text-align: center;
+}
+
+.homeContainer {
+  border-style: solid;
+  border-color: rgba(239, 248, 250, 0.46);
+  background-color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  margin-bottom: 100%;
+}
+
+.pick {
+  margin-top: 3em;
+  font-size: 30px;
+  font-weight: bold;
+  overflow: auto;
+}
+
+#foo {
+    width: 20%;  height: 3em;
+    margin: 50px;
+    padding: 10px;
+    color: rgba(74, 74, 74, 1);
+    font-size: 15px;
+    overflow: auto;
+}
+
+
+
+
+@media only screen and (max-width: 750px) {
+    .homeContainer  {
+    color: inherit;
+    overflow: auto;
+  }
+   .imageworld {
+     background-size: 100%;
+     overflow: auto;
+  }
 }
