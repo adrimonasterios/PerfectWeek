@@ -4,7 +4,8 @@ import {BrowserRouter as Router, Link} from 'react-router-dom'
 class Day extends React.Component{
   render(){
     return(
-      <div>
+      <div className="day_table">
+        <p>Day</p>
         <div onClick={(ev)=>{ev.preventDefault(); this.props.currentDay(this.props.joined)}}>
           <Link to={`/week/currentday`}>{this.props.restaurants}</Link>
         </div>
