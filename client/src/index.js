@@ -47,7 +47,7 @@ class App extends React.Component{
    await this.setState({current: clicked})
  }
 
- sevenRes (){
+ sevenRes(){
    let otherArr = this.state.queryData;
    let elementArr = otherArr.filter((element)=> element.review_count>1000);
    elementArr.sort((a,b) => {
@@ -60,18 +60,40 @@ class App extends React.Component{
  }
 
  sevenActive(){
-   let activeArr = this.state.queryDataActive;
-   let artsArr = this.state.queryDataArts;
-   let publicArr = this.state.queryDataPublicArts;
-   let arr1 = activeArr.concat(artsArr);
-   let otherArr = arr1.concat(publicArr);
-   let elementArr = otherArr.filter((element)=> element.review_count>600);
-   elementArr.sort((a,b) => {
+   let arrRes = this.sevenRes();
+   let arrResName = arrRes.map((element)=>element.name);
+   let arrActive = this.state.queryDataActive;
+   let arrArts = this.state.queryDataArts;
+   let arrPublic = this.state.queryDataPublicArts;
+   let arrConcat = arrActive.concat(arrArts);
+   let mapArr = arrConcat.concat(arrPublic)
+
+   let arrSeven3 = mapArr.filter((element, index)=>
+   !element.categories[0].alias.includes("food") &&
+   !element.name.includes("Food") &&
+   !element.name.includes("CRUST") &&
+   !element.name.includes("gourmet") &&
+   !element.name.includes("burger") &&
+   !element.name.includes("arbar") &&
+   !element.name.includes("KYU") &&
+   !element.name.includes("hain") &&
+   !element.name.includes("okal") &&
+   !element.name.includes("irano") &&
+   !element.name.includes("Dog") &&
+   !element.name.includes("Grill") &&
+   !element.name.includes("Donut") &&
+   !element.name.includes("Milano") &&
+   !element.name.includes("Gramps") &&
+   !element.name.includes("Cream") &&
+   !element.name.includes("Lagniappe") &&
+   !element.name.includes("Restaurant") &&
+   !arrResName.includes(element.name) &&
+   !element.name.includes("Caf") &&
+   element.review_count>250).sort((a,b) => {
      return b.rating-a.rating
-     // return ((((a.rating/a.review_count)*10000)-((b.rating/b.review_count)*10000)))
    })
-   let arrSeven2 = elementArr.filter((element, index) => index < 7 )
-   // this.setState({sevenActive: arrSeven2})
+   let arrSeven2 = arrSeven3.filter((element, index) =>  index < 7)
+
    return arrSeven2
  }
 
