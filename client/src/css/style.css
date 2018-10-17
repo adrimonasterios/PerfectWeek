@@ -3,7 +3,6 @@
   /* box-sizing: border-box; */
   font-family: 'Shadows Into Light Two', cursive;
   color: rgb(74, 74, 74);
-  text-decoration: none;
 }
 /* home */
 /* main background image */
@@ -15,14 +14,25 @@
   overflow: auto;
 }
 
-li {
+/* li {
   list-style-type: none;
-}
+} */
 
 .navBar {
   display: flex;
   justify-content:flex-end;
 }
+
+.navBar a.active {
+  color:#93AFBF;
+}
+
+.navBar a:hover {
+  background-color: rgba(239, 248, 250, 1.46);
+  border-radius: 55%;
+}
+
+
 
 .first, .second, .third {
   margin: 10px;
@@ -69,7 +79,6 @@ li {
 }
 #submit-button {
   font-family: 'Shadows Into Light Two', cursive;
-
   font-size: 1.5em;
 }
 
@@ -91,6 +100,10 @@ li {
   .week_image_world {
   background-size: 100%;
  }
+ .miami {
+   color: inherit;
+   overflow: auto;
+ }
 }
 
 /*=================================  */
@@ -105,6 +118,7 @@ li {
 }
 
 .week_container {
+  display: flex;
   border-style: solid;
   border-color: rgba(239, 248, 250, 0.46);
   background-color: rgba(255, 255, 255, 0.75);
@@ -113,6 +127,49 @@ li {
   overflow: auto;
 }
 
-.pair_1 {
-  color: blue;
+/* .res :hover{
+  background-color: red;
+} */
+.week_rest_top :hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.week_ent_botton :hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.week_min_container {
+  /* border: 1px;
+  border-style: solid;
+  border-color: red; */
+  display:inline-flex;
+  /* flex-direction: row; */
+  /* align-items: flex-start; */
+  margin: auto;
+}
+
+.day_table {
+  padding: 70px 0;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid red;
+  border-style: solid;
+  border-color: rgba(239, 248, 250, 1.46);
+}
+
+.day_table a.active {
+  color:#93AFBF;
+}
+
+.day_table a:hover {
+  background-color: rgba(255, 255, 255, 2);
+  border-radius: 55%;
+  }
+
+
+.week_name_assort {
+  padding: 70px 0;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
 }
