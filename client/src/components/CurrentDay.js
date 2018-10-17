@@ -4,6 +4,8 @@ class CurrentDay extends React.Component{
   render(){
     return(
   <div className="travel_image">
+    <h1 className="Logotopic">PERFECT WEEK</h1>
+
     <div className="daily">
       <h2>Your Restaurant today:</h2>
         <div className="block1">
@@ -12,8 +14,8 @@ class CurrentDay extends React.Component{
               {this.props.sevenRes()[this.props.current] &&
               <img className="rest_pic"src={`${this.props.sevenRes()[this.props.current].image_url}`} alt={`Photo of restaurant`}/>}
             </div>
-          <div classNam="restaurant">
-            <div class="overlay1">
+          <div className="restaurant">
+            <div className="overlay1">
                   {this.props.sevenRes()[this.props.current] &&
                   <h1 className="name">{this.props.sevenRes()[this.props.current].name}</h1>}
                <div className="restaurant_result">
@@ -35,11 +37,11 @@ class CurrentDay extends React.Component{
 
       <div className="block2">
         <div className="container2">
-            <div class="picture2">
+            <div className="picture2">
                 {this.props.sevenActive()[this.props.current] &&
-                <img class="ent_pic"src={`${this.props.sevenActive()[this.props.current].image_url}`} alt={`Photo of entertainment`}/>}
+                <img className="ent_pic"src={`${this.props.sevenActive()[this.props.current].image_url}`} alt={`Photo of entertainment`}/>}
             </div>
-             <div classNam="entertainment">
+             <div className="entertainment">
                <div className="overlay2">
                    {this.props.sevenActive()[this.props.current] &&
                    <h1 className="name">{this.props.sevenActive()[this.props.current].name}</h1>}

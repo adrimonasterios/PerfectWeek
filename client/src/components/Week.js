@@ -9,6 +9,7 @@ class Week extends React.Component {
 
     return(
     <div className="week_image_world">
+            <h1 className="Logotopic">PERFECT WEEK</h1>
       <div className="week_container">
         <div className="week_min_container">
           <div className="week_rest_top">
