@@ -54,7 +54,7 @@ class App extends React.Component{
      return b.rating-a.rating
      // return ((((a.rating/a.review_count)*10000)-((b.rating/b.review_count)*10000)))
    })
-   let arrSeven1 = elementArr.filter((element, index) => index < 7 )
+   let arrSeven1 = elementArr.filter((element, index) => index < 7 ).filter((element) => element.categories != "restaurants")
    // this.setState({sevenRes: arrSeven1})
    return arrSeven1
  }
