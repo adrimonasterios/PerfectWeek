@@ -13,6 +13,22 @@
   background-size: 100%;
   min-width: auto;
   overflow: auto;
+  /* position: relative; */
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+h2{
+  display: flex;
+  flex-direction: row;
+  font-weight: bolder;
+  font-size: 30px;
 }
 
 /* li {
@@ -22,6 +38,7 @@
 .navBar {
   display: flex;
   justify-content:flex-end;
+  z-index: -1
 }
 
 .navBar a.active {
@@ -46,10 +63,15 @@
   font-family: 'Trirong', serif;
   font-size: 60px;
   font-weight: bold;
-  display: center;
-  margin-top: -15px;
-  height: 300px;
   text-align: center;
+  height: auto;
+  position: absolute;
+  margin-top: -100px;
+  margin-left: 600px;
+  margin-bottom: 200px;
+  background-color: white;
+  display: block;
+  z-index: 1;
 }
 
 .homeContainer {
@@ -57,7 +79,8 @@
   border-color: rgba(239, 248, 250, 0.46);
   background-color: rgba(255, 255, 255, 0.75);
   text-align: center;
-  margin-bottom: 100%;
+  margin-bottom: 150px;
+  margin-top: 300px;
 }
 
 .pick {
@@ -80,7 +103,19 @@
 }
 #submit-button {
   font-family: 'Shadows Into Light Two', cursive;
-  font-size: 1.5em;
+  font-size: 2em;
+  font-weight: bold;
+  background: none;
+ color: white;
+ border: none;
+ padding: 0;
+ font: inherit;
+ cursor: pointer;
+ outline: inherit;
+ background-color: rgb(52, 128, 187);
+ border-radius: 100px solid;
+ padding: 10px 20px
+
 }
 
 
@@ -107,6 +142,19 @@
  }
 }
 
+/* .week_image_world .Logotopic{
+  height: 0px;
+  position: fixed;
+  margin-top: -100px;
+  margin-left: 600px
+}
+
+.travel_image .Logotopic{
+  height: 0px;
+  position: fixed;
+  margin-top: -100px;
+  margin-left: 600px
+} */
 /*=================================  */
 /* start of week page */
 
@@ -135,6 +183,7 @@
   background-image: url(background.png);
   background-repeat: no-repeat;
   background-size: 100%;
+  margin-bottom:auto;
   min-width: auto;
   overflow: auto;
 }
@@ -144,7 +193,8 @@
   border-color: rgba(239, 248, 250, 0.46);
   background-color: rgba(255, 255, 255, 0.75);
   text-align: center;
-  margin-bottom: 100%;
+  margin-bottom: 200px;
+  margin-left: 5%;
   overflow: auto;
 }
 
@@ -196,7 +246,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-    background-color: rgba(237, 237, 237, 0.7)
+    background-color: rgba(237, 237, 237, 0.7);
+  padding: 20px 20px
 }
 
 
@@ -243,12 +294,19 @@
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  background-color: rgba(237, 237, 237, 0.7)
+  background-color: rgba(237, 237, 237, 0.7);
+    padding: 20px 20px;
 }
 
 
+.went_ent_botton .day_table{
+  background-image: url('../images/restaurant.jpg');
+}
+
 h1 > .name {
   font-size: 40px;
+  margin:20px;
+  word-wrap: normal;
 }
 /*====44444===*/
 /* .res :hover{
@@ -276,9 +334,15 @@ h1 > .name {
   padding: 70px 0;
   text-align: center;
   font-size: 30px;
-  border: 1px solid red;
+  border: 1px solid rgb(195, 195, 195);
   border-style: solid;
-  border-color: rgba(239, 248, 250, 1.46);
+  /* border-color: rgba(239, 248, 250, 1.46); */
+  padding: 40px 30px;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 200px;
+  background-color: rgba(245, 245, 245, 0.6)
+
 }
 
 .day_table a.active {
