@@ -34,7 +34,7 @@ app.get('/home4', async (req, res) => {
   res.json(data);
 })
 
-routes.get('/', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile( path.join(__dirname, './client/build/index.html') );
 })
 
