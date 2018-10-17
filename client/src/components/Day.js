@@ -5,10 +5,10 @@ class Day extends React.Component{
   render(){
     return(
       <div>
-        <div onClick={(ev)=>{ev.preventDefault(); this.props.currentDay(this.props.className)}}>
+        <div onClick={(ev)=>{ev.preventDefault(); this.props.currentDay(this.props.joined)}}>
           <Link to={`/week/currentday`}>{this.props.restaurants}</Link>
         </div>
-        <div onClick={(ev)=>{ev.preventDefault(); this.props.currentDay(this.props.className)}}>
+        <div onClick={(ev)=>{ev.preventDefault(); this.props.currentDay(this.props.joined)}}>
           <Link to={`/week/currentday`}>{this.props.entertainment}</Link>
         </div>
       </div>
