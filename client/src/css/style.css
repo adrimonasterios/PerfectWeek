@@ -164,7 +164,7 @@
 .picture1 {
   display: flex;
   text-align: center;
-  width: 500px;
+  width: 700px;
   height: 500px;
 }
 
@@ -211,7 +211,7 @@
 .picture2 {
   display: flex;
   text-align: center;
-  width: 500px;
+  width: 700px;
   height: 500px;
 }
 
@@ -249,6 +249,7 @@
 
 h1 > .name {
   font-size: 40px;
+}
 /*====44444===*/
 /* .res :hover{
   background-color: red;
