@@ -1,0 +1,5 @@
+// !element.categories[0].alias.includes("food") || !element.categories[1].alias.includes("food") || !element.categories[0].alias.includes("gourmet") || !element.categories[1].alias.includes("gourmet") || !element.categories[0].alias.includes("burger")
+// || !element.categories[1].alias.includes("burger") || !element.categories[0].alias.includes("desert") || !element.categories[1].alias.includes("desert") || !element.categories[0].alias.includes("salad") || !element.categories[1].alias.includes("salad")
+// || !element.categories[0].alias.includes("dog") || !element.categories[1].alias.includes("dog") ||
+// !element.categories[0].alias.includes("pasta") || !element.categories[1].alias.includes("pasta") || !element.categories[0].alias.includes("pizza") || !element.categories[1].alias.includes("pizza") || !element.name.includes("Food") || !element.name.includes("pizza")
+// || !element.name.includes("gourmet") || !element.name.includes("burger") || !element.name.includes("desert") || !element.name.includes("pasta") || !element.name.includes("salad") || !element.name.includes("Dog") || !element.name.includes("Grill")

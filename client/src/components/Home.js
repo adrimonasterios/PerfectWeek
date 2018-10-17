@@ -15,7 +15,7 @@ class Home extends React.Component {
          <div>
            <p className="pick">Pick the city! We do the rest</p>
          </div>
-           <HomeForm sayHello={this.props.sayHello}/>
+           <HomeForm sayHello={this.props.sayHello} arts={this.props.arts}/>
         </div>
       </div>
     </div>
