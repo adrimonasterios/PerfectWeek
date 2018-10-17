@@ -18,7 +18,7 @@ class App extends React.Component{
      queryDataActive:[],
      queryDataArts:[],
      queryDataPublicArts:[],
-     current:"",
+     current: '',
    }
    this.sayHello = this.sayHello.bind(this);
    this.currentDay = this.currentDay.bind(this);
@@ -44,7 +44,7 @@ class App extends React.Component{
 
  async currentDay(classId){
    let clicked = classId;
-   await this.setState({current:clicked})
+   await this.setState({current: clicked})
  }
 
  sevenRes (){
