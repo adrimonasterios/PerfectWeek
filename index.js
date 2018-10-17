@@ -34,5 +34,8 @@ app.get('/home4', async (req, res) => {
   res.json(data);
 })
 
+routes.get('/', (req, res) => {
+  res.sendFile( path.join(__dirname, './client/build/index.html') );
+})
 
 app.listen(PORT, () => console.log(`App listening on Port ${PORT}`))
