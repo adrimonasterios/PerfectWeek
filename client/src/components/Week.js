@@ -37,18 +37,20 @@ class Week extends React.Component {
     let active = this.props.sevenActive()
 
     return(
-      <div>
-        <div><p>Restaurants!</p>
+    <div className="week_image_world">
+      <div className="week_container">
+        <div className="week_restaurant"><p>Restaurants!</p>
           {res.map((element, index)=>{
-            return <Day currentDay={this.props.currentDay} restaurants={element.name} className={index} key={`key_${index}`}/>
+            return <Day currentDay={this.props.currentDay} restaurants={element.name} className={`${index}, pair_${index}`} key={`key_${index}`}/>
           })}
         </div>
-        <div><p>Entertainment!</p>
+        <div className="week_entertainment"><p>Entertainment!</p>
           {active.map((element, index)=>{
             return <Day currentDay={this.props.currentDay} entertainment={element.name} className={index} key={`key_${index}`}/>
           })}
         </div>
       </div>
+    </div>
     )
   }
 }
