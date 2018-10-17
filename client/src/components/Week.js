@@ -11,13 +11,14 @@ class Week extends React.Component {
       <div>
         <div>
           {res.map((element, index)=>{
-            return <Day currentDay={this.props.currentDay} restaurants={element.name} className={index} key={`key_${index}`}/>
+            return <Day currentDay={this.props.currentDay} restaurants={element.name} className={`${index}, pair_${index}`} key={`key_${index}`}/>
           })}
           {active.map((element, index)=>{
             return <Day currentDay={this.props.currentDay} entertainment={element.name} className={index} key={`key_${index}`}/>
           })}
         </div>
       </div>
+    </div>
     )
   }
 }

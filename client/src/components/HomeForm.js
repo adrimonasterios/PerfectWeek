@@ -16,7 +16,7 @@ class HomeForm extends React.Component{
       <Router>
         <form>
           <input id="foo" type='text'/>
-          <input type="submit" onClick={(ev)=>{ev.preventDefault();
+          <input id="submit-button"type="submit" onClick={(ev)=>{ev.preventDefault();
                                                 this.props.sayHello();
                                                 this.toWeek();
                                               }}/>
