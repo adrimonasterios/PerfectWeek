@@ -85,7 +85,7 @@ class App extends React.Component{
               <div className="third"><li><Link to="/contact">Contact</Link></li></div>
             </ul>
           <Route exact path="/home" component={() => <Home sayHello={this.sayHello} />}/>
-          <Route exact path="/week" component={() => <Week currentDay={this.currentDay} sevenRes={this.sevenRes} sevenActive={this.sevenActive} queryData={this.state.queryData} queryDataActive={this.state.queryDataActive} queryDataArts={this.state.queryDataArts} queryDataPublicArts={this.state.queryDataPublicArts}/>}/>
+          <Route exact path="/week" component={() => <Week current={this.state.current} currentDay={this.currentDay} sevenRes={this.sevenRes} sevenActive={this.sevenActive} queryData={this.state.queryData} queryDataActive={this.state.queryDataActive} queryDataArts={this.state.queryDataArts} queryDataPublicArts={this.state.queryDataPublicArts}/>}/>
           <Route path="/week/currentday" component={()=> <CurrentDay current={this.state.current} sevenRes={this.sevenRes} sevenActive={this.sevenActive}/>}/>
        </div>
      </Router>
