@@ -13,7 +13,7 @@ class Home extends React.Component {
       <h1 className="Logotopic">PERFECT WEEK</h1>
         <div className="homeContainer">
          <div>
-           <p className="pick">Pick the city! We do the rest</p>
+           <p className="pick">Pick the city! We do the rest...</p>
          </div>
            <HomeForm sayHello={this.props.sayHello} arts={this.props.arts}/>
         </div>

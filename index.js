@@ -3,6 +3,7 @@ const axios = require('axios');
 const yelp = require('yelp-fusion');
 const apiKey = 'Bearer zMhGgLW70Ydy2AzBdWa9moBjqx0rI6oe8on2X34CI8CgdSOJi9EMxaopOtmU9Ovs2-QYJSJNrBhRRB2vqELGvy5PUruzjgWumWxKmnx5AhtXQi6cQcvgOVVxK8jCW3Yx';
 const categories = require('./categories.json');
+const path = require('path');
 
 
 
@@ -34,5 +35,8 @@ app.get('/home4', async (req, res) => {
   res.json(data);
 })
 
+app.get('/', (req, res) => {
+  res.sendFile( path.join(__dirname, './client/build/index.html') );
+})
 
 app.listen(PORT, () => console.log(`App listening on Port ${PORT}`))
