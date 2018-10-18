@@ -109,6 +109,20 @@ class App extends React.Component{
           <Route exact path="/home" component={() => <Home sayHello={this.sayHello} />}/>
           <Route exact path="/week" component={() => <Week current={this.state.current} currentDay={this.currentDay} sevenRes={this.sevenRes} sevenActive={this.sevenActive} queryData={this.state.queryData} queryDataActive={this.state.queryDataActive} queryDataArts={this.state.queryDataArts} queryDataPublicArts={this.state.queryDataPublicArts}/>}/>
           <Route path="/week/currentday" component={()=> <CurrentDay current={this.state.current} sevenRes={this.sevenRes} sevenActive={this.sevenActive}/>}/>
+          <div className="navBottom">
+            <Route path="/facebook" component={()=>window.location='https://www.facebook.com'}/>
+            <Link to="/facebook">
+              <i className="fab fa-facebook fa-3x"></i>
+            </Link>
+            <Route path="/github" component={()=>window.location='https://github.com/adrimonasterios/PerfectWeek'}/>
+            <Link to="/github">
+              <i className="fab fa-github fa-3x"></i>
+            </Link>
+            <Route path="/instagram" component={()=>window.location='https://www.instagram.com'}/>
+            <Link to="/instagram">
+              <i className="fab fa-instagram fa-3x"></i>
+            </Link>
+          </div>
        </div>
      </Router>
 
